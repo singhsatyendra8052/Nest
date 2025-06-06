@@ -1,0 +1,50 @@
+### creating the user
+
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "test@gmail.com",
+    "password":"12345"
+}
+
+
+###signin 
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "test@gmail.com",
+    "password":"12345"
+}
+
+
+###get by id
+GET  http://localhost:3000/auth/2
+
+
+
+
+### get by email
+GET  http://localhost:3000/auth?email=sonu1@gmail.com
+
+###delet by given id
+DELETE  http://localhost:3000/auth/id/3
+
+### update by id
+PATCH  http://localhost:3000/auth/1
+Content-Type: application/json
+
+{
+    "email": "sonu1@gmail.com"
+}
+
+
+### get the user
+GET  http://localhost:3000/auth/whoami
+
+
+
+
+###signout
+GET http://localhost:3000/auth/signout
