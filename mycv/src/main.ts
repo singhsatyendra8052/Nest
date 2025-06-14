@@ -15,20 +15,20 @@ async function bootstrap() {
   //   }),
   // );
 
-  app.use(cookieParser());
-  app.use(
-    session({
-      secret: '4bfhe9bfvt',
-      resave: false,
-      saveUninitialized: false,
-      cookie: { maxAge: 60000 }, // adjust as needed
-    }),
-  );
-  app.useGlobalPipes(
-    new ValidationPipe({
-      whitelist: true,
-    }),
-  );
+  // app.use(cookieParser());
+  // app.use(
+  //   session({
+  //     secret: '4bfhe9bfvt',
+  //     resave: false,
+  //     saveUninitialized: false,
+  //     cookie: { maxAge: 60000 }, // adjust as needed
+  //   }),
+  // );
+  // app.useGlobalPipes(
+  //   new ValidationPipe({
+  //     whitelist: true,
+  //   }),
+  // );
   await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();

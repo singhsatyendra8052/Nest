@@ -20,7 +20,7 @@ import { Serialize } from '../interceptors/serialze.intercept';
 import { AuthService } from './auth.service';
 import { CurrentUser } from './decorators/current-user.decorators';
 import { User } from './users.entity';
-import { AuthGuard } from './guards/auth.guard';
+import { AuthGuard } from '../guards/auth.guard';
 @Controller('auth')
 @Serialize(UserDto)
 // @UseInterceptors(CurrentUserInterceptor) to setup globally we apply this interceptor in use.module.ts

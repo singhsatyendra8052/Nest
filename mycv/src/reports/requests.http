@@ -1,0 +1,25 @@
+### creating the report
+POST  http://localhost:3000/reports
+Content-Type:  application/json
+
+{
+    "make": "Ford",
+    "model": "Mustang",
+    "year": 2010,
+    "mileage": 15000,
+    "lng": 0,
+    "lat": 0,
+    "price": 220000
+}
+
+
+### approving the report
+PATCH http://localhost:3000/reports/1
+Content-Type: application/json
+
+{
+    "approved": true
+}
+
+### estimating the report
+get http://localhost:3000/reports?make=Ford&model=Mustang&year=2010&mileage=15000&lng=0&lat=0

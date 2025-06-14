@@ -1,10 +1,13 @@
 # compiled output
+.env.test
+.env.development
 dist/
 Message\message\dist
 node_modules/
 /build
 Message\message\dist
 Message\message
+mycv.db/
 # Logs
 logs
 *.log
